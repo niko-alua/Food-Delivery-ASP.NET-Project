@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Admin Panel - Current orders";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <ul class="list-group mb-3">
+                <li class="list-group-item list-group-item-warning">Dashboard</li>
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Admin" asp-action="Categories">
+                    Categories
+                </a>
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Admin" asp-action="Places">
+                    Places
+                </a>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-danger">
+                    Orders management
+                </li>
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Admin" asp-action="CurrentOrders">
+                    Current orders
+                </a>
+                <a class="list-group-item list-group-item-action" asp-area="" asp-controller="Admin" asp-action="AllOrders">
+                    All orders
+                </a>
+            </ul>
+        </div>
+        <div class="col-9">
+            <div class="d-flex align-items-center justify-content-between my-3">
+                <h2>Categories</h2>
+                <a class="btn btn-outline-success" href="#" role="button">
+                    NEW <i class="fas fa-plus"></i>
+                </a>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 5%">#</th>
+                        <th scope="col" style="width: 40%">Type</th>
+                        <th scope="col" style="width: 40%">Name</th>
+                        <th scope="col"
+                            colspan="2"
+                            class="text-center"
+                            style="width: 15%">
+                            Actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>aaaa</td>
+                        <td>aaaa</td>
+                        <td>
+                            <button type="button" class="btn btn-info btn-sm">
+                                Edit
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
